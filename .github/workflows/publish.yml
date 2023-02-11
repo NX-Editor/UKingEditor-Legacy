@@ -24,7 +24,7 @@ jobs:
             runtime: win-x64
 
     env:
-      proj: "U-King Editor"
+      proj: "UKingEditor"
 
     steps:
       - name: Checkout
