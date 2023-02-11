@@ -1,7 +1,7 @@
-﻿using AvaloniaEditorTemplate.Views;
-using Dock.Model.ReactiveUI.Controls;
+﻿using Dock.Model.ReactiveUI.Controls;
+using UKingEditor.Views;
 
-namespace AvaloniaEditorTemplate.ViewModels;
+namespace UKingEditor.ViewModels;
 
 public class SettingsViewModel : Document
 {

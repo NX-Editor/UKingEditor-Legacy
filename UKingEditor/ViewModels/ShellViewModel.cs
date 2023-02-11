@@ -2,7 +2,7 @@
 
 using Dock.Model.Core;
 
-namespace AvaloniaEditorTemplate.ViewModels;
+namespace UKingEditor.ViewModels;
 
 public class ShellViewModel : ReactiveObject
 {

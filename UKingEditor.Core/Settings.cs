@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 using System.Text.Json;
 using static System.Environment;
 
-namespace AvaloniaEditorTemplate.Core;
+namespace UKingEditor.Core;
 
 public class Settings : ISettingsBase
 {
     private static Settings? _config = null;
     public static Settings Config => _config ?? throw new Exception("The settings were not loaded, please use Settings.LoadConfig() to initialize the settings");
-    public static string DataFolder { get; } = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? $"{GetFolderPath(SpecialFolder.LocalApplicationData)}/{nameof(AvaloniaEditorTemplate)}" : $"{GetFolderPath(SpecialFolder.ApplicationData)}/{nameof(AvaloniaEditorTemplate)}";
+    public static string DataFolder { get; } = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? $"{GetFolderPath(SpecialFolder.LocalApplicationData)}/{nameof(UKingEditor)}" : $"{GetFolderPath(SpecialFolder.ApplicationData)}/{nameof(UKingEditor)}";
 
     public bool RequiresInput { get; set; }
 
@@ -38,12 +38,10 @@ public class Settings : ISettingsBase
 
     public static void LoadConfig()
     {
-        if (File.Exists($"{DataFolder}/Config.json"))
-        {
+        if (File.Exists($"{DataFolder}/Config.json")) {
             _config = JsonSerializer.Deserialize<Settings>(File.ReadAllText($"{DataFolder}/Config.json")) ?? new();
         }
-        else if (File.Exists($"{DataFolder}/../bcml/settings.json"))
-        {
+        else if (File.Exists($"{DataFolder}/../bcml/settings.json")) {
             _config = new();
 
             Dictionary<string, object> settings =
@@ -56,10 +54,8 @@ public class Settings : ISettingsBase
             _config.DlcDirNx = settings["dlc_dir_nx"].ToString() ?? "";
             _config.Save();
         }
-        else
-        {
-            _config = new()
-            {
+        else {
+            _config = new() {
                 RequiresInput = true
             };
             _config.Save();
@@ -75,13 +71,11 @@ public class Settings : ISettingsBase
 
     public bool ValidateFolder(string path, string mode)
     {
-        if (path == null || File.Exists(path))
-        {
+        if (path == null || File.Exists(path)) {
             return false;
         }
 
-        return mode switch
-        {
+        return mode switch {
             "GameDir" => File.Exists($"{path}/Pack/Dungeon000.pack") && path.EndsWith("content"),
             "UpdateDir" => File.Exists($"{path}/Actor/Pack/ActorObserverByActorTagTag.sbactorpack") && path.EndsWith("content"),
             "DlcDir" => File.Exists($"{path}/Pack/AocMainField.pack") && path.Replace(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar).EndsWith("content/0010"),

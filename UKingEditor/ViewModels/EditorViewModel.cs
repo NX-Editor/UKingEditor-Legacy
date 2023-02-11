@@ -1,6 +1,6 @@
 ﻿using Dock.Model.ReactiveUI.Controls;
 
-namespace AvaloniaEditorTemplate.ViewModels;
+namespace UKingEditor.ViewModels;
 
 public class EditorViewModel : Document
 {

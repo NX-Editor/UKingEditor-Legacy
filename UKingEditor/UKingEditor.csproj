@@ -37,7 +37,7 @@
 		<PackageReference Include="XamlNameReferenceGenerator" Version="1.5.1" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\AvaloniaEditorTemplate.Core\AvaloniaEditorTemplate.Core.csproj" />
+		<ProjectReference Include="..\UKingEditor.Core\UKingEditor.Core.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 		<Using Include="ReactiveUI" />

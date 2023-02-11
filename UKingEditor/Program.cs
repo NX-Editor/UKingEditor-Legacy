@@ -3,7 +3,7 @@ using Avalonia.ReactiveUI;
 using Projektanker.Icons.Avalonia;
 using Projektanker.Icons.Avalonia.FontAwesome;
 
-namespace AvaloniaEditorTemplate;
+namespace UKingEditor;
 
 internal class Program
 {

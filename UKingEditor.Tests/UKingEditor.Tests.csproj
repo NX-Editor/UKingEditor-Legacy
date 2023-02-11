@@ -19,12 +19,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AvaloniaEditorTemplate.Core\AvaloniaEditorTemplate.Core.csproj" />
+    <ProjectReference Include="..\UKingEditor.Core\UKingEditor.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
-    <Using Include="AvaloniaEditorTemplate.Core.Settings">
+    <Using Include="UKingEditor.Core.Settings">
       <Static>True</Static>
     </Using>
   </ItemGroup>

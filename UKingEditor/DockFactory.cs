@@ -1,12 +1,12 @@
-﻿using AvaloniaEditorTemplate.ViewModels;
-using Dock.Avalonia.Controls;
+﻿using Dock.Avalonia.Controls;
 using Dock.Model.Controls;
 using Dock.Model.Core;
 using Dock.Model.ReactiveUI;
 using Dock.Model.ReactiveUI.Controls;
 using DynamicData;
+using UKingEditor.ViewModels;
 
-namespace AvaloniaEditorTemplate;
+namespace UKingEditor;
 
 public class DockFactory : Factory
 {

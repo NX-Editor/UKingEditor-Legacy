@@ -1,11 +1,11 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Generics.Dialogs;
 using Avalonia.MenuFactory.Attributes;
-using AvaloniaEditorTemplate.Core.Extensions;
-using AvaloniaEditorTemplate.ViewModels;
 using Material.Icons;
+using UKingEditor.Core.Extensions;
+using UKingEditor.ViewModels;
 
-namespace AvaloniaEditorTemplate.Models;
+namespace UKingEditor.Models;
 
 public class ShellMenuModel
 {
@@ -57,12 +57,12 @@ public class ShellMenuModel
     [Menu("Wiki", "_About", Icon = MaterialIconKind.HelpOutline)]
     public static async Task Help()
     {
-        await BrowserExtension.OpenUrl("https://github.com/$username$/$safeprojectname$/wiki");
+        await BrowserExtension.OpenUrl("https://github.com/ArchLeaders/UKingEditor/wiki");
     }
-    
+
     [Menu("Report Issue", "_About", Icon = MaterialIconKind.Bug, IsSeparator = true)]
     public static async Task ReportIssue()
     {
-        await BrowserExtension.OpenUrl("https://github.com/$username$/$safeprojectname$/issues/new");
+        await BrowserExtension.OpenUrl("https://github.com/ArchLeaders/UKingEditor/issues/new");
     }
 }

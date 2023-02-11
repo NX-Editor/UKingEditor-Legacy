@@ -1,5 +1,5 @@
-# Avalonia Editor Template
+# U-King Editor
 
-Generic avalonia template setup with a settings page and model (tuned to botw), document dock, code-behind project, and some other QoL things.
+General purpose file editor for Botw - based off [Wild-Bits](https://github.com/NiceneNerd/Wild-Bits) by [NiceneNerd](https://github.com/NiceneNerd)
 
 _(c) ArchLeaders - 2023_

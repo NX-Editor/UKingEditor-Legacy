@@ -1,7 +1,7 @@
-﻿using AvaloniaEditorTemplate.Core.Extensions;
-using Dock.Model.ReactiveUI.Controls;
+﻿using Dock.Model.ReactiveUI.Controls;
+using UKingEditor.Core.Extensions;
 
-namespace AvaloniaEditorTemplate.ViewModels;
+namespace UKingEditor.ViewModels;
 
 public class HomeViewModel : Document
 {
@@ -15,6 +15,6 @@ public class HomeViewModel : Document
 
     public static async Task VersionLink()
     {
-        await BrowserExtension.OpenUrl("https://github.com/$username$/$projectname$/releases/");
+        await BrowserExtension.OpenUrl("https://github.com/ArchLeaders/UKingEditor/releases/");
     }
 }

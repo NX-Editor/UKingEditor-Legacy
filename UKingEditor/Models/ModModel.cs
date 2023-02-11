@@ -1,4 +1,4 @@
-﻿namespace AvaloniaEditorTemplate.Models;
+﻿namespace UKingEditor.Models;
 
 public class ModModel
 {

@@ -1,25 +1,25 @@
-global using static AvaloniaEditorTemplate.App;
-global using static AvaloniaEditorTemplate.Core.Settings;
+global using static UKingEditor.App;
+global using static UKingEditor.Core.Settings;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Generics;
 using Avalonia.Generics.Builders;
 using Avalonia.Markup.Xaml;
 using Avalonia.Themes.Fluent;
-using AvaloniaEditorTemplate.Models;
-using AvaloniaEditorTemplate.ViewModels;
-using AvaloniaEditorTemplate.Views;
+using UKingEditor.Models;
+using UKingEditor.ViewModels;
+using UKingEditor.Views;
 
-namespace AvaloniaEditorTemplate;
+namespace UKingEditor;
 
 public partial class App : Application
 {
-    public static string Title { get; } = "$projectname$";
+    public static string Title { get; } = "U-King Editor";
     public static string? Version { get; } = typeof(App).Assembly.GetName().Version?.ToString(3);
 
     public static ShellView ShellView { get; set; } = null!;
     public static ShellViewModel Shell { get; set; } = new();
-    public static FluentTheme Theme { get; set; } = new(new Uri("avares://$safeprojectname$/Styles"));
+    public static FluentTheme Theme { get; set; } = new(new Uri("avares://UKingEditor/Styles"));
 
     public override void Initialize()
     {

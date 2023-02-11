@@ -24,7 +24,7 @@ jobs:
             runtime: win-x64
 
     env:
-      proj: "$projectname$"
+      proj: "U-King Editor"
 
     steps:
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
         with:
           dotnet-version: "7.0.x"
 
-      - name: Publish $projectname$
+      - name: Publish U-King Editor
         run: dotnet publish ${{ env.proj }}/${{ env.proj }}.csproj -r ${{ matrix.platform.runtime }} --configuration Release -p:Version=${{ github.event.release.tag_name }} --output ${{ matrix.platform.name }} --sc false -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
 
       - name: Upload artifacts

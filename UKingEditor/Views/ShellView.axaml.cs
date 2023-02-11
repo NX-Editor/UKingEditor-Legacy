@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace AvaloniaEditorTemplate.Views;
+namespace UKingEditor.Views;
 
 public partial class ShellView : Window
 {

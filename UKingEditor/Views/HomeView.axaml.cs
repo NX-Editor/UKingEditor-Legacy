@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Input;
 
-namespace AvaloniaEditorTemplate.Views;
+namespace UKingEditor.Views;
 
 public partial class HomeView : UserControl
 {

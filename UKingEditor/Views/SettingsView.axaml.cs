@@ -6,7 +6,7 @@ using Avalonia.SettingsFactory.ViewModels;
 using Avalonia.Themes.Fluent;
 using System.Reflection;
 
-namespace AvaloniaEditorTemplate.Views;
+namespace UKingEditor.Views;
 
 public partial class SettingsView : SettingsFactory, ISettingsValidator
 {
