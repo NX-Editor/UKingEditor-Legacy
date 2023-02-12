@@ -46,7 +46,7 @@
                                    FontFamily="Ubuntu"
                                    FontStyle="Italic"
                                    Foreground="{DynamicResource SystemBaseMediumColor}"
-                                   Text="\{ Drag/drop action \}"
+                                   Text="Drag and drop a file to open"
                                    TextAlignment="Center" />
                     </StackPanel>
                 </Border>
