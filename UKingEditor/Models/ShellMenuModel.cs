@@ -4,6 +4,7 @@ using Avalonia.MenuFactory.Attributes;
 using Material.Icons;
 using UKingEditor.Core.Extensions;
 using UKingEditor.ViewModels;
+using UKingEditor.ViewModels.Editors;
 
 namespace UKingEditor.Models;
 
@@ -15,7 +16,7 @@ public class ShellMenuModel
     [Menu("Open File", "_File", Icon = MaterialIconKind.FolderOpen, HotKey = "Ctrl + O")]
     public static void OpenFile()
     {
-        // Handle open file
+        DockFactory.AddDocument(new TextEditorViewModel(null!));
     }
 
     [Menu("New File", "_File", Icon = MaterialIconKind.CreateNewFolder, HotKey = "Ctrl + N")]
