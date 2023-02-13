@@ -19,7 +19,7 @@ public partial class App : Application
 
     public static ShellView ShellView { get; set; } = null!;
     public static ShellViewModel Shell { get; set; } = new();
-    public static FluentTheme Theme { get; set; } = new(new Uri("avares://UKingEditor/Styles"));
+    // public static FluentTheme Theme { get; set; } = new(new Uri("avares://UKingEditor/Styles"));
 
     public override void Initialize()
     {
@@ -30,8 +30,8 @@ public partial class App : Application
     {
         LoadConfig();
 
-        Theme.Mode = Config.Theme == "Dark" ? FluentThemeMode.Dark : FluentThemeMode.Light;
-        Current!.Styles[0] = Theme;
+        // Theme.Mode = Config.Theme == "Dark" ? FluentThemeMode.Dark : FluentThemeMode.Light;
+        // Current!.Styles[0] = Theme;
 
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop) {
             ShellView = new();

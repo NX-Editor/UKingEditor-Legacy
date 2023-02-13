@@ -3,6 +3,7 @@ using Avalonia.Generics.Dialogs;
 using Avalonia.SettingsFactory;
 using Avalonia.SettingsFactory.Core;
 using Avalonia.SettingsFactory.ViewModels;
+using Avalonia.Styling;
 using Avalonia.Themes.Fluent;
 using System.Reflection;
 
@@ -13,7 +14,7 @@ public partial class SettingsView : SettingsFactory, ISettingsValidator
     internal static SettingsView? Live { get; set; } = null;
 
     private static readonly SettingsFactoryOptions _options = new() {
-        AlertAction = (msg) => MessageBox.ShowDialog(msg),
+        AlertAction = async (msg) => await MessageBox.ShowDialog(msg),
         BrowseAction = async (title) => await new BrowserDialog(BrowserMode.OpenFolder).ShowDialog(),
     };
 
@@ -58,8 +59,7 @@ public partial class SettingsView : SettingsFactory, ISettingsValidator
 
     public static bool? ValidateTheme(string value)
     {
-        App.Theme.Mode = value == "Dark" ? FluentThemeMode.Dark : FluentThemeMode.Light;
-        Application.Current!.Styles[0] = App.Theme;
+        Application.Current!.RequestedThemeVariant = value == "Dark" ? ThemeVariant.Dark : ThemeVariant.Light;
         return null;
     }
 
