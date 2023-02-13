@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Generics.Dialogs;
-using Avalonia.MenuFactory.Attributes;
+using Avalonia.Generics.Factories;
 using Material.Icons;
 using UKingEditor.Core.Extensions;
 using UKingEditor.ViewModels;

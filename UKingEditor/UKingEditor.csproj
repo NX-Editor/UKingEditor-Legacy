@@ -21,24 +21,33 @@
 		<TrimmableAssembly Include="Avalonia.Themes.Default" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Avalonia" Version="11.0.0-preview4" />
+		<PackageReference Include="Avalonia" Version="11.0.0-preview2" />
 		<PackageReference Include="Avalonia.AvaloniaEdit" Version="11.0.0-preview2" />
-		<PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview4" />
+		<PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview2" />
 		<!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0-preview4" />
-		<PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview4" />
-		<PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview4" />
-		<PackageReference Include="AvaloniaGenerics" Version="1.0.5" />
-		<PackageReference Include="AvaloniaSettingsFactory" Version="1.2.6" />
-		<PackageReference Include="AvaloniaSettingsFactory.Core" Version="1.2.6" />
-		<PackageReference Include="Dock.Avalonia" Version="11.0.0-preview4" />
-		<PackageReference Include="Dock.Model.ReactiveUI" Version="11.0.0-preview4" />
-		<PackageReference Include="Projektanker.Icons.Avalonia" Version="6.3.0-preview4" />
-		<PackageReference Include="Projektanker.Icons.Avalonia.FontAwesome" Version="6.3.0-preview4" />
+		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0-preview2" />
+		<PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview2" />
+		<PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview2" />
+		<PackageReference Include="Dock.Avalonia" Version="11.0.0-preview2" />
+		<PackageReference Include="Dock.Model.ReactiveUI" Version="11.0.0-preview2" />
+		<PackageReference Include="Material.Icons.Avalonia" Version="2.0.0-preview1" />
+		<PackageReference Include="Projektanker.Icons.Avalonia" Version="6.2.0-preview1" />
+		<PackageReference Include="Projektanker.Icons.Avalonia.FontAwesome" Version="6.2.0-preview1" />
 		<PackageReference Include="XamlNameReferenceGenerator" Version="1.5.1" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\UKingEditor.Core\UKingEditor.Core.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="Avalonia.Generics">
+	    <HintPath>..\..\..\..\Libraries\Avalonia\Avalonia.Generics\Avalonia.Generics\bin\Release\net7.0\Avalonia.Generics.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Avalonia.SettingsFactory">
+	    <HintPath>..\..\..\..\Libraries\Avalonia\Avalonia.Builders\Avalonia.SettingsFactory\Avalonia.SettingsFactory\bin\Release\net7.0\Avalonia.SettingsFactory.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Avalonia.SettingsFactory.Core">
+	    <HintPath>..\assemblies\Avalonia.SettingsFactory.Core.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 	<ItemGroup>
 		<Using Include="ReactiveUI" />

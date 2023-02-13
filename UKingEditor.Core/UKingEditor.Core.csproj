@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AvaloniaSettingsFactory.Core" Version="1.2.6" />
     <PackageReference Include="BymlLibrary" Version="1.1.4" />
     <PackageReference Include="Yaz0Library" Version="1.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Editor\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Avalonia.SettingsFactory.Core">
+      <HintPath>..\assemblies\Avalonia.SettingsFactory.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
