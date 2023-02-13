@@ -1,0 +1,15 @@
+[submodule "Avalonia.Generics"]
+	path = Avalonia.Generics
+	url = https://github.com/ArchLeaders/Avalonia.Generics
+[submodule "Lib/Avalonia.Generics"]
+	path = Lib/Avalonia.Generics
+	url = https://github.com/ArchLeaders/Avalonia.Generics
+[submodule "Lib/Avalonia.SettingsFactory"]
+	path = Lib/Avalonia.SettingsFactory
+	url = https://github.com/ArchLeaders/Avalonia.SettingsFactory
+[submodule "Lib/Dock.Avalonia"]
+	path = Lib/Dock.Avalonia
+	url = https://github.com/wieslawsoltes/Dock
+[submodule "Lib/Avalonia.Dock"]
+	path = Lib/Avalonia.Dock
+	url = https://github.com/wieslawsoltes/Dock
