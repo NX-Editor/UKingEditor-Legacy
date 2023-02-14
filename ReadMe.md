@@ -1,5 +1,3 @@
 # U-King Editor
 
-General purpose file editor for Botw - based off [Wild-Bits](https://github.com/NiceneNerd/Wild-Bits) by [NiceneNerd](https://github.com/NiceneNerd)
-
-_(c) ArchLeaders - 2023_
+This project has moved: [Source Code](https://github.com/UKing-Editor/UKing-Editor), [Website](https://uking-editor.github.io/)
